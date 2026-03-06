@@ -1,0 +1,12 @@
+<HBox spacing="10"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.CommentController"
+      stylesheets="@../style.css"
+      styleClass="card">
+
+    <Label fx:id="userLabel"
+           style="-fx-font-weight:bold"/>
+
+    <Label fx:id="commentLabel"/>
+
+</HBox>

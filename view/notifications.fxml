@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.NotificationController" prefWidth="900.0" prefHeight="700.0" style="-fx-background-color: #121212;">
+    <stylesheets><URL value="@styles.css" /></stylesheets>
+    
+    <top>
+        <HBox spacing="20" alignment="CENTER_LEFT" styleClass="sidebar" prefHeight="60">
+            <Label text="Notifications" styleClass="title-text" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button text="Back to Home" onAction="#goBack" styleClass="btn-secondary"/>
+        </HBox>
+    </top>
+    
+    <center>
+        <ScrollPane fitToWidth="true" style="-fx-background-color: transparent; -fx-padding: 20;">
+            <VBox fx:id="notificationsVBox" spacing="10" maxWidth="600" alignment="CENTER" style="-fx-margin: auto;" />
+        </ScrollPane>
+    </center>
+</BorderPane>

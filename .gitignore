@@ -1,0 +1,11 @@
+# تجاهل بيانات قاعدة البيانات الحساسة
+src/utils/DBConnection.java
+
+# تجاهل ملفات IDE
+*.classpath
+*.project
+*.settings/
+
+# تجاهل JARs إذا لا تريد رفعها
+*.jar
+

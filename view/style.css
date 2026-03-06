@@ -1,0 +1,121 @@
+/* الألوان الأساسية الخاصة بك */
+* {
+    -fx-primary-pink: #FF5F8F;
+    -fx-primary-blue: #1DA1F2;
+    -fx-primary-cyan: #1BC7C9;
+    -fx-primary-green: #33C100;
+    -fx-primary-yellow: #FFD93B;
+    -fx-bg-dark: #121212;
+    -fx-bg-card: #1E1E1E;
+    -fx-text-color: #FFFFFF;
+    -fx-text-muted: #A0A0A0;
+}
+
+.root {
+    -fx-background-color: -fx-bg-dark;
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+/* تصميم البطاقة (Card) مع الظلال */
+.auth-card {
+    -fx-background-color: -fx-bg-card;
+    -fx-background-radius: 15;
+    -fx-padding: 40;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 15, 0, 0, 5);
+}
+
+/* تصميم حقول الإدخال */
+.text-field, .password-field {
+    -fx-background-color: #2A2A2A;
+    -fx-text-fill: -fx-text-color;
+    -fx-background-radius: 8;
+    -fx-padding: 12;
+    -fx-border-color: transparent transparent #2A2A2A transparent;
+    -fx-border-width: 0 0 2 0;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: transparent transparent -fx-primary-blue transparent;
+    -fx-background-color: #333333;
+}
+
+/* تصميم الزر الأساسي */
+.btn-primary {
+    -fx-background-color: -fx-primary-blue;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 25;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #1a8cd4;
+}
+
+/* تصميم الروابط */
+.link-text {
+    -fx-text-fill: -fx-primary-cyan;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+    -fx-underline: false;
+}
+
+.link-text:hover {
+    -fx-underline: true;
+}
+
+/* نصوص عامة */
+.title-text {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-text-color;
+}
+
+.error-text {
+    -fx-text-fill: -fx-primary-pink;
+    -fx-font-size: 12px;
+}
+/* الأزرار العلوية */
+.nav-btn { -fx-background-color: transparent; -fx-text-fill: #e1e1e1; -fx-font-weight: bold; -fx-cursor: hand; }
+.nav-btn:hover { -fx-text-fill: white; }
+.nav-btn-active { -fx-background-color: rgba(255,255,255,0.2); -fx-text-fill: white; -fx-background-radius: 10; -fx-font-weight: bold; }
+
+/* كروت الكتابة */
+.create-post-card { -fx-background-color: #1e1e1e; -fx-padding: 20; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 4); }
+.modern-textarea { -fx-control-inner-background: #252525; -fx-text-fill: white; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #333; }
+
+/* أزرار الـ Sidebar */
+.btn-sidebar-link { -fx-background-color: transparent; -fx-text-fill: #bbb; -fx-alignment: CENTER_LEFT; -fx-cursor: hand; }
+.btn-sidebar-link:hover { -fx-text-fill: #1DA1F2; -fx-background-color: #1a1a1a; }
+
+/* الزر الرئيسي */
+.btn-primary-rounded { -fx-background-color: #1DA1F2; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20; -fx-cursor: hand; }
+/* تنسيقات الإعجاب والتعليقات */
+.like-btn { -fx-background-color: transparent; -fx-text-fill: #AAAAAA; -fx-font-weight: bold; -fx-cursor: hand; -fx-font-size: 14px; }
+.like-btn:hover { -fx-background-color: #333333; -fx-background-radius: 5; }
+.like-btn-active { -fx-background-color: transparent; -fx-text-fill: #E0245E; -fx-font-weight: bold; -fx-cursor: hand; -fx-font-size: 14px; }
+.like-btn-active:hover { -fx-background-color: #4A1A2A; -fx-background-radius: 5; }
+
+.comments-section { -fx-background-color: #1A1A1A; -fx-padding: 10; -fx-background-radius: 5; }
+.comment-box { -fx-background-color: #252525; -fx-padding: 8; -fx-background-radius: 10; }
+.comment-author { -fx-text-fill: #1DA1F2; -fx-font-weight: bold; -fx-font-size: 13px; }
+.comment-text { -fx-text-fill: #DDDDDD; -fx-font-size: 13px; -fx-wrap-text: true; }
+.comment-input { -fx-background-color: #333333; -fx-text-fill: white; -fx-background-radius: 15; -fx-padding: 5 10; }
+/* إضافات صفحة الرئيسية والمنشورات */
+.sidebar { -fx-background-color: #181818; -fx-padding: 20; }
+.feed-area { -fx-background-color: -fx-bg-dark; -fx-padding: 20; }
+.post-card { -fx-background-color: -fx-bg-card; -fx-background-radius: 10; -fx-padding: 15; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 2); }
+.post-content { -fx-text-fill: -fx-text-color; -fx-font-size: 14px; -fx-wrap-text: true; }
+.post-author { -fx-text-fill: -fx-primary-blue; -fx-font-weight: bold; -fx-font-size: 16px; }
+.create-post-area { -fx-background-color: #2A2A2A; -fx-background-radius: 10; -fx-padding: 15; }
+.text-area { -fx-control-inner-background: #333; -fx-text-fill: white; -fx-background-color: transparent; }
+.text-area .content { -fx-background-color: transparent; }
+.btn-secondary { -fx-background-color: #333; -fx-text-fill: white; -fx-background-radius: 20; -fx-padding: 8 15; -fx-cursor: hand; }
+.btn-secondary:hover { -fx-background-color: #444; }
+/* تنسيقات كروت الأصدقاء */
+.friend-item { -fx-background-color: #252525; -fx-padding: 15; -fx-background-radius: 8; -fx-border-color: #333; -fx-border-radius: 8; }
+.friend-name { -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold; }
+.btn-accept { -fx-background-color: #33C100; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand; -fx-background-radius: 5; }
+.btn-decline { -fx-background-color: #333333; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand; -fx-background-radius: 5; }

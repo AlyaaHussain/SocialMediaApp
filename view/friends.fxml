@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.FriendController" prefWidth="900.0" prefHeight="700.0" style="-fx-background-color: #121212;">
+    <stylesheets><URL value="@styles.css" /></stylesheets>
+    
+    <top>
+        <HBox spacing="20" alignment="CENTER_LEFT" styleClass="sidebar" prefHeight="60">
+            <Label text="Friends &amp; Requests" styleClass="title-text" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button text="Back to Home" onAction="#goBack" styleClass="btn-secondary"/>
+        </HBox>
+    </top>
+    
+    <center>
+        <HBox spacing="20" style="-fx-padding: 20;">
+            <VBox spacing="15" prefWidth="400" styleClass="auth-card">
+                <Label text="Find Friends" style="-fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold;" />
+                <HBox spacing="10">
+                    <TextField fx:id="searchField" promptText="Search by name..." HBox.hgrow="ALWAYS" styleClass="text-field" />
+                    <Button text="Search" onAction="#handleSearch" styleClass="btn-primary" />
+                </HBox>
+                <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;">
+                    <VBox fx:id="searchResultsVBox" spacing="10" />
+                </ScrollPane>
+            </VBox>
+
+            <VBox spacing="15" HBox.hgrow="ALWAYS" styleClass="auth-card">
+                <Label text="Friend Requests" style="-fx-text-fill: #1DA1F2; -fx-font-size: 18px; -fx-font-weight: bold;" />
+                <VBox fx:id="requestsVBox" spacing="10" />
+                
+                <Label text="My Friends" style="-fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold; -fx-padding: 20 0 0 0;" />
+                <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+                    <VBox fx:id="friendsListVBox" spacing="10" />
+                </ScrollPane>
+            </VBox>
+        </HBox>
+    </center>
+</BorderPane>

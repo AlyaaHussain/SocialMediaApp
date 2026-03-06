@@ -1,0 +1,12 @@
+<VBox spacing="10"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.SearchController"
+      stylesheets="@../style.css">
+
+    <TextField fx:id="searchField"
+               promptText="Search users..."
+               onKeyReleased="#searchUser"/>
+
+    <ListView fx:id="resultsList"/>
+
+</VBox>

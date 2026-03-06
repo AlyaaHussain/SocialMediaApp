@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import java.net.URL?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.ProfileController" prefWidth="900.0" prefHeight="700.0" style="-fx-background-color: #121212;">
+    <stylesheets><URL value="@styles.css" /></stylesheets>
+    
+    <center>
+        <VBox alignment="CENTER" spacing="20" maxWidth="500" styleClass="auth-card" translateY="50">
+            <Label text="My Profile" styleClass="title-text" />
+            <Label fx:id="statusLabel" textFill="#33C100" />
+            
+            <ImageView fx:id="profileImageView" fitWidth="120" fitHeight="120" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 0);" />
+            <Button text="Change Picture" onAction="#handleUploadPicture" styleClass="btn-secondary" />
+
+            <TextField fx:id="nameField" promptText="Full Name" styleClass="text-field" />
+           <TextArea fx:id="bioArea" promptText="Write something about yourself..." prefRowCount="3" style="-fx-control-inner-background: #2A2A2A; -fx-text-fill: white; -fx-prompt-text-fill: #888888;" />
+            
+            <HBox spacing="20" alignment="CENTER" style="-fx-padding: 20 0 0 0;">
+                <Button text="Back to Home" onAction="#goBack" styleClass="btn-secondary" />
+                <Button text="Save Changes" onAction="#handleSaveChanges" styleClass="btn-primary" />
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

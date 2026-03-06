@@ -32,7 +32,7 @@ Likes & Comments:
 ![Likes & Comments](images/likes&comment.png)
 
 Friends & Search :
-![Friends](images/friends.png)
+![Friends](images/freinds.png)
 
 
 ## Technologies Used

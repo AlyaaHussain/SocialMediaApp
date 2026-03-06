@@ -18,21 +18,40 @@ Users can create profiles, post updates, interact with friends, and manage their
 ---
 ## Screenshots
 
-Login / Register:
-![Login](images/login.png)
+## 📱 Project Gallery
 
-User Profile:
-![Profile Edit](images/profile.png)
-
-Home Page(Create Post & News Feed):
-![Home_Page](images/home.png)
-![Create Post](images/post.png)
-
-Likes & Comments:
-![Likes & Comments](images/likes&comment.png)
-
-Friends & Search :
-![Friends](images/freinds.png)
+<table style="width: 100%; text-align: center;">
+  <tr>
+    <td width="50%">
+      <p><b>🔐 Login & Authentication</b></p>
+      <img src="images/login.png" width="400" alt="Login Screen"/>
+    </td>
+    <td width="50%">
+      <p><b>👤 User Profile</b></p>
+      <img src="images/profile.png" width="400" alt="Profile Screen"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <p><b>🏠 News Feed & Home</b></p>
+      <img src="images/home.png" width="400" alt="Home Feed"/>
+    </td>
+    <td width="50%">
+      <p><b>📝 Create New Post</b></p>
+      <img src="images/post.png" width="400" alt="Create Post"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <p><b>💬 Interactions (Likes & Comments)</b></p>
+      <img src="images/likes&comment.png" width="400" alt="Interactions"/>
+    </td>
+    <td width="50%">
+      <p><b>👥 Friends & Search System</b></p>
+      <img src="images/freinds.png" width="400" alt="Friends Search"/>
+    </td>
+  </tr>
+</table>[Friends](images/freinds.png)
 
 
 ## Technologies Used
